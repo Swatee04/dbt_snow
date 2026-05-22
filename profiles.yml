@@ -1,0 +1,10 @@
+default:
+  target: DBT_SCHEMA
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: DBT_WH
+      database: DBT_DB
+      schema: DBT_SCHEMA
+      threads: 8
